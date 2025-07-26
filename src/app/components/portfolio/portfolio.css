@@ -1,0 +1,26 @@
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #1abc9ce6;
+  opacity: 0;
+  transition: opacity 0.6s;
+  cursor: pointer;
+}
+.layer:hover {
+  opacity: 1;
+}
+
+.light-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.light-container img {
+  width: 600px;
+}

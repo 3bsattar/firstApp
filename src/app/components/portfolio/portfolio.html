@@ -1,0 +1,29 @@
+<div class="mb-4 position-relative">
+  <div class="pt-4">
+    <app-star [title]="'portfolio'" [customcolor]="'#2c3e50'"></app-star>
+    <div class="container">
+      <div class="row g-4">
+        @for (img of imageList; track img) {
+        <div class="col-md-6 col-lg-4" (click)="showLightbox(img)">
+          <div class="position-relative overflow-hidden rounded-3">
+            <img [src]="img" class="w-100 rounded-3" alt="" />
+            <div
+              class="layer position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-plus fa-6x text-white"></i>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>
+@if (isLightVisible) {
+<div
+  class="lightbox position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-black bg-opacity-75"
+  (click)="closeLightbox()"
+>
+  <img [src]="selectedImage" (click)="$event.stopPropagation()" />
+</div>
+}

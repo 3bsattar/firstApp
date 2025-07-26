@@ -1,0 +1,7 @@
+.home {
+  background-color: var(--main-color);
+}
+
+.my-img img {
+  width: 250px;
+}

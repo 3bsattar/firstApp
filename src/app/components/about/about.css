@@ -1,0 +1,6 @@
+p {
+  text-align: left;
+}
+.about {
+  background-color: var(--main-color);
+}

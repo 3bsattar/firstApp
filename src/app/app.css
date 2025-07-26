@@ -1,0 +1,4 @@
+.main-content {
+  min-height: calc(-106px + 100vh);
+  margin-top: 82px;
+}
